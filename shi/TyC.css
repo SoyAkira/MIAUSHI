@@ -1,0 +1,148 @@
+body{
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Dongle', sans-serif;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100%;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    padding: 10px;
+    width: 100;
+    height: 100;
+    box-shadow: 0px 0px 5px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo label{
+    display: flex;
+    align-items: center;
+}
+.logo .ri-menu-line img {
+    height: 78px;
+    margin-left: 30px;
+}
+.logo .ri-menu-line{
+    margin-left: 100px;
+    font-size: 20px;
+}
+.nav1 a{
+    margin-right: 70px;
+}
+/*menu*/
+#btn-menu{
+    display: none;
+}
+.conteiner-menu{
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 155vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .conteiner-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 325px;
+    background-color: #ffffff;
+    height: 155vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+
+}
+#btn-menu:checked ~ .conteiner-menu .cont-menu{
+transform: translateY(0%);
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #000000;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid #ffffff;
+    border: none;
+    background-color: #1f1f1f;
+    color: white;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+.icon-equis{
+    color: #000000;
+    margin-top: -10px;
+}
+.ri-close-line{
+    color: #000000;
+}
+/*Conteiner*/
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 1000;
+    font-size: 52px;
+}
+.tyc{
+    width: 835px;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+p{
+    font-family: 'Sora', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+dl{
+    font-family: 'Sora', sans-serif;
+}
+/*footer*/
+ul{
+    list-style: none;
+    font-size: 20px;
+}
+.footer{
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Dongle', sans-serif;
+}
+.footer .listafooter ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+p::selection{
+    background-color: black;
+}
+dt::selection{
+    background-color: black;
+}
+h1::selection{
+    background-color: black;
+}
